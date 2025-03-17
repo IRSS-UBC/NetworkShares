@@ -43,8 +43,8 @@ To move files to or from the network shares, you **must** use the following robo
 
 **Command details:**
 - **robocopy**: The command itself, indicating that you want to use the Robocopy utility.
-- **`<SOURCE>`**: The source directory or path. Replace `<SOURCE>` with the actual path (e.g., "P:/") of the directory you want to copy from (e.g., `\\frst-irsstor2\ByProject\_CanadaLayers\Rasters\DEM`).
-- **`<DESTINATION>`**: The destination directory or path. Replace `<DESTINATION>` with the actual path (e.g., "O:/") of the directory you want to copy to (e.g., `\\frst-irsstor2\ByUser\MurrayBrent`).
+- **`<SOURCE>`**: The source directory or path. Replace `<SOURCE>` with the actual path (e.g., "P:/") of the directory you want to copy from (e.g., "\\frst-irsstor2\ByProject\_CanadaLayers\Rasters\DEM").
+- **`<DESTINATION>`**: The destination directory or path. Replace `<DESTINATION>` with the actual path (e.g., "O:/") of the directory you want to copy to (e.g., "\\frst-irsstor2\ByUser\MurrayBrent").
 - **/XA:SH**: Excludes files with the "System" and "Hidden" attributes from being copied.
 - **/E**: Copies subdirectories, including empty ones.
 - **/MT:5**: Enables multi-threaded copying using 5 threads (the default is 8).
