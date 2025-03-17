@@ -53,8 +53,8 @@ To move files to or from the network shares, you **must** use the following robo
 *Note: These network shares are for storing data only. DO NOT work directly off these shares; copy the files you need to your local machine and process your data locally.*
 
 ### Additional Notes
-On the second Tuesday night of every month, the network shares will be rebooted. This reboot removes any lock files that may accumulate on the network when files are accessed directly rather than being copied locally. Please do not copy any files during this time, as doing so may result in corrupted files or missing data.
+- On the second Tuesday night of every month, the network shares will be rebooted. This reboot removes any lock files that may accumulate on the network when files are accessed directly rather than being copied locally. Please do not copy any files during this time, as doing so may result in corrupted files or missing data.
 
-Please do not map the network drives to a drive letter (old way) but create a shortcut instead!
+- Please do not map the network drives to a drive letter (old way) but create a shortcut instead!
 
 ---
