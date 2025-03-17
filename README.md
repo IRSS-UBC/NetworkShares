@@ -38,7 +38,7 @@ You can now access these shares by opening the shortcuts.
 ### Moving Files To/From Network
 To move files to or from the network shares, you **must** use the following robocopy command:
 
-`robocopy <SOURCE> <DESTINATION> /XA:SH /E /MT:5 /ZB`
+`robocopy <SOURCE> <DESTINATION> /XA:SH /E /MT /ZB`
 
 
 **Command details:**
@@ -47,12 +47,14 @@ To move files to or from the network shares, you **must** use the following robo
 - **`<DESTINATION>`**: The destination directory or path. Replace `<DESTINATION>` with the actual path (e.g., "O:/") of the directory you want to copy to (e.g., "\\frst-irsstor2\ByUser\MurrayBrent").
 - **/XA:SH**: Excludes files with the "System" and "Hidden" attributes from being copied.
 - **/E**: Copies subdirectories, including empty ones.
-- **/MT:5**: Enables multi-threaded copying using 5 threads (the default is 8).
+- **/MT**: Enables multi-threaded copying (the default is 8).
 - **/ZB**: Uses restartable mode, allowing the copy to resume if interrupted.
 
 *Note: These network shares are for storing data only. DO NOT work directly off these shares; copy the files you need to your local machine and process your data locally.*
 
 ### Additional Notes
 On the second Tuesday night of every month, the network shares will be rebooted. This reboot removes any lock files that may accumulate on the network when files are accessed directly rather than being copied locally. Please do not copy any files during this time, as doing so may result in corrupted files or missing data.
+
+Please do not map the network drives to a drive letter (old way) but create a shortcut instead!
 
 ---
