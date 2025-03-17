@@ -5,7 +5,7 @@
 - [The Network Shares](#the-network-shares)
   - [ByUser and ByProject](#byuser-and-byproject)
   - [Connecting to ByUser and ByProject](#connecting-to-byuser-and-byproject)
-  - [Moving Files To/From Network](#moving-files-to-from-network)
+  - [Moving Files To/From Network](#moving-files-tofrom-network)
   - [Additional Notes](#additional-notes)
 
 ## Introduction
