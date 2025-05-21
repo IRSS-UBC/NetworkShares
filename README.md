@@ -26,7 +26,7 @@ To connect to ByUser and ByProject, it is recommended to create a shortcut to th
 To do this:
 1. Open File Explorer to the location where you want the shortcuts (the desktop is a good choice).
 2. Right-click in a blank space and select **New > Shortcut**.
-3. Enter `\\frst-irsstor2\ByUser` as the location of the item.
+3. Enter `\\frst-irss\ByUser` as the location of the item.
 4. Click **Next**.
 5. Enter "ByUser" as the name for the shortcut.
 6. Click **Finish**.
