@@ -23,15 +23,21 @@ ByUser and ByProject are the two network shares available for storing data. **By
 ### Connecting to ByUser and ByProject
 To connect to ByUser and ByProject, it is recommended to create a shortcut to the network paths. This will limit the number of active users on the shares, speeding up the upload and download process, and will prevent overwhelming the server when it is not in use.
 
-To do this:
+To connect to ByUser:
 1. Open File Explorer to the location where you want the shortcuts (the desktop is a good choice).
 2. Right-click in a blank space and select **New > Shortcut**.
-3. Enter `\\frst-irss\ByUser` as the location of the item.
+3. Enter `\\frst-irss2\ByUser` as the location of the item.
 4. Click **Next**.
 5. Enter "ByUser" as the name for the shortcut.
 6. Click **Finish**.
 
-Follow the same steps for ByProject, replacing "ByUser" with "ByProject" in both the item location and the shortcut name.
+To connect to ByProject:
+1. Open File Explorer to the location where you want the shortcuts (the desktop is a good choice).
+2. Right-click in a blank space and select **New > Shortcut**.
+3. Enter `\\frst-irss\ByProject` as the location of the item.
+4. Click **Next**.
+5. Enter "ByUser" as the name for the shortcut.
+6. Click **Finish**.
 
 You can now access these shares by opening the shortcuts.
 
@@ -44,7 +50,7 @@ To move files to or from the network shares, you **must** use the following robo
 **Command details:**
 - **robocopy**: The command itself, indicating that you want to use the Robocopy utility.
 - **`<SOURCE>`**: The source directory or path. Replace `<SOURCE>` with the actual path (e.g., "P:/") of the directory you want to copy from (e.g., "\\\frst-irss\ByProject\_CanadaLayers\Rasters\DEM").
-- **`<DESTINATION>`**: The destination directory or path. Replace `<DESTINATION>` with the actual path (e.g., "O:/") of the directory you want to copy to (e.g., "\\\frst-irss\ByUser\MurrayBrent").
+- **`<DESTINATION>`**: The destination directory or path. Replace `<DESTINATION>` with the actual path (e.g., "O:/") of the directory you want to copy to (e.g., "\\\frst-irss2\ByUser\MurrayBrent").
 - **/XA:SH**: Excludes files with the "System" and "Hidden" attributes from being copied.
 - **/E**: Copies subdirectories, including empty ones.
 - **/MT**: Enables multi-threaded copying (the default is 8).
